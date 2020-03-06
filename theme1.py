@@ -159,7 +159,7 @@ while running:
         if event.key == pygame.K_q:
             running = False
         if event.key == pygame.K_r:
-            os.system("python3 theme1.py")
+            os.system("python theme1.py")
             running = False
 
     # stop continuous movement when releasing arrow keys

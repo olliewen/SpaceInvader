@@ -1,6 +1,7 @@
 import pygame
 import os
 from time import sleep
+import sys
 
 # setting window position
 x = 500
@@ -51,14 +52,12 @@ while running:
     if event.type == pygame.KEYDOWN:
         if event.key == pygame.K_q:
             running = False
-        if event.key == pygame.K_r:
-            continue
-        if event.key == pygame.K_1:
+        elif event.key == pygame.K_1:
+            os.system('python theme1.py')
             running = False
-            os.system('python3 theme1.py')
 
-        if event.key == pygame.K_2:
+        else:
+            os.system('python theme2.py')
             running = False
-            os.system('python3 theme2.py')
 
 
